@@ -1,0 +1,88 @@
+/*
+    The "*" selector is the universal selector.
+    It will select ever element on the web page and apply
+    the specified styling.
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+    You can use type selectors to select a type of element on the
+    web page. Using a type selector will select every instance
+    of the element in the web page.
+*/
+h1 {
+    margin: 10px;
+}
+
+/*
+    You can use id selectors to select any element with the specified
+    id. Because id's are highly specific (no two elements can have the
+    same id), this selects a specific element on the web page.
+*/
+#introduction {
+    width: 75%;
+    margin: 0 20px;
+
+    border: 2px black solid;
+}
+
+/*
+    You can use class selectors to select all elements with the specified
+    class. You can be more specific and use type selectors with a class
+    selector.
+
+        .copy: selects all elements with the copy class
+        p .copy: selects all <p> elements that have the copy class
+*/
+.copy {
+    width: 75%;
+    margin: 0 20px;
+
+    background-color: cornsilk;
+}
+
+/*
+    You can select elements that are children of a specified element.
+
+        ul > li: selects all li elements that are direct children of a <ul> element
+*/
+ul > li {
+    background-color: rgb(53, 208, 255);
+}
+
+li > a {
+    color: rgb(0, 255, 213);
+}
+
+/*
+    You can select elements that are descendents of a specified element.
+
+        p a: selects any <a> elements that are inside any <p> element
+*/
+p a {
+    color: rgb(255, 157, 0);
+}
+
+/*
+    You can select adjacent elements of a specified element.
+
+        h1 + p: selects the first <p> element after an <h1> element,
+            but not any other <p> element.
+*/
+h1 + p {
+    background-color: papayawhip;
+}
+
+/*
+    You can select general siblings after a specified element.
+    This allows you to select certain elements that show up after
+    a specified element.
+
+        h2 ~ p: selects all <p> elements after the any <h2> element
+*/
+h2 ~ p {
+    font-size: 1.5em;
+}

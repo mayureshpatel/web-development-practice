@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Positioning: Relative</title>
+
+    <style>
+        html {
+            background-color: white;
+        }
+
+        body {
+            background-color: rgb(221, 236, 255);
+            margin: 100px;
+        }
+
+        h1, div.nc {
+            width: 100%;
+
+            /*
+                The property position is, by defualt, set to static. This will make the
+                block-level element sit on top of the next one. You don't need to explicity
+                tell the browser to do this.
+            */
+            position: static;
+
+            background-color: lightskyblue;
+        }
+
+        div.static, div.relative {
+            width: 600px;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 30px;
+
+            display: inline-block;
+        }
+
+        div.absolute {
+            width: 600px;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 30px;
+
+            
+        }
+
+        div.absolute p.middle {
+            /*
+                Absolute positioning positions the element in relation to its containing
+                element. It is taken out of normal flow, meaning that it does not affect
+                the position of any surrounding elements. Absolutely placed elements will
+                as you scroll up and down a page
+
+                NOTE: To make an element absolutely positioned within its containing element,
+                you must have the containing element positioned relatively, otherwise, the
+                absolutely placed element will become absolute to the next parent element
+                all the way up to the html tag.
+            */
+            position: absolute;
+
+            top: 0px;
+            left: 0px;
+
+            margin: 0px;
+        }
+
+        p {
+            width: 300px;
+
+            position: static;
+
+            background-color: lightgoldenrodyellow;
+        }
+
+        p.middle {
+            /*
+                Using the relative value for the position property moves an element
+                from the position it would be in norma flow, shitfting to the top, right,
+                bottom, or left of where it would have been placed. This does not affect
+                the position of surrounding elements; they stay in the position they would
+                be in in the normal flow.
+            */
+            position: relative;
+
+            left: 90px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Relative Positioning:
+
+        Relative positioning moves an element in relation to where it would have
+        been in normal flow.
+
+        You can indicate that an element should be relatively positioned using the
+        position property with a value of relative.
+
+        Then you can use the offset properties to indicate how far to move the element
+        from where it would have been in normal flow.
+
+        To move the box you can use the following properties:
+
+            top: how far to move the box from the top of the parent
+            bottom: how far to move the box from the bottom of the parent
+
+            left: how far to move the box from the left of the parent
+            right: how far to move the box from the right of the parent.
+
+        The values of the offset proeprties are usually given in pixels,
+        percentages, or ems.
+    -->
+    <div class="static">
+        <h1>Static Positioning: Static</h1>
+
+        <div class="nc">
+            <p>
+                V for victory Phanpy Badge Virizion Beedrill I like shorts Litwick. Soul Badge
+                Charizard Water Gun Dustox Kanto Munchlax Exeggcute. Mewtwo Strikes Back Xatu
+                sunt in culpa qui officia Tympole Flareon Pelipper Normal. Rainbow Badge Yamask
+                our courage will pull us through Phione Grumpig Luxray Seedot. Bubble Sapphire
+                Combusken Squirtle Gliscor Golurk Rufflet.
+            </p>
+        </div>
+
+        <p>
+            This is another line
+        </p>
+
+        <div class="nc">
+            <p>
+                V for victory Phanpy Badge Virizion Beedrill I like shorts Litwick. Soul Badge
+                Charizard Water Gun Dustox Kanto Munchlax Exeggcute. Mewtwo Strikes Back Xatu
+                sunt in culpa qui officia Tympole Flareon Pelipper Normal. Rainbow Badge Yamask
+                our courage will pull us through Phione Grumpig Luxray Seedot. Bubble Sapphire
+                Combusken Squirtle Gliscor Golurk Rufflet.
+            </p>
+        </div>
+    </div>
+
+    <div class="relative">
+        <h1>Relative Positioning: Relative</h1>
+
+        <div class="nc">
+            <p>
+                V for victory Phanpy Badge Virizion Beedrill I like shorts Litwick. Soul Badge
+                Charizard Water Gun Dustox Kanto Munchlax Exeggcute. Mewtwo Strikes Back Xatu
+                sunt in culpa qui officia Tympole Flareon Pelipper Normal. Rainbow Badge Yamask
+                our courage will pull us through Phione Grumpig Luxray Seedot. Bubble Sapphire
+                Combusken Squirtle Gliscor Golurk Rufflet.
+            </p>
+        </div>
+
+        <p class="middle">
+            This is another line
+        </p>
+
+        <div class="nc">
+            <p>
+                V for victory Phanpy Badge Virizion Beedrill I like shorts Litwick. Soul Badge
+                Charizard Water Gun Dustox Kanto Munchlax Exeggcute. Mewtwo Strikes Back Xatu
+                sunt in culpa qui officia Tympole Flareon Pelipper Normal. Rainbow Badge Yamask
+                our courage will pull us through Phione Grumpig Luxray Seedot. Bubble Sapphire
+                Combusken Squirtle Gliscor Golurk Rufflet.
+            </p>
+        </div>
+    </div>
+
+    <div class="absolute">
+        <h1>Absolute Positioning: Absolute</h1>
+
+        <div class="nc">
+            <p>
+                V for victory Phanpy Badge Virizion Beedrill I like shorts Litwick. Soul Badge
+                Charizard Water Gun Dustox Kanto Munchlax Exeggcute. Mewtwo Strikes Back Xatu
+                sunt in culpa qui officia Tympole Flareon Pelipper Normal. Rainbow Badge Yamask
+                our courage will pull us through Phione Grumpig Luxray Seedot. Bubble Sapphire
+                Combusken Squirtle Gliscor Golurk Rufflet.
+            </p>
+        </div>
+
+        <p class="middle">
+            This is taken out of the normal flow of the document and is relative to
+            the html tag because none of its parent elements were positioned relative
+        </p>
+
+        <div class="nc">
+            <p>
+                V for victory Phanpy Badge Virizion Beedrill I like shorts Litwick. Soul Badge
+                Charizard Water Gun Dustox Kanto Munchlax Exeggcute. Mewtwo Strikes Back Xatu
+                sunt in culpa qui officia Tympole Flareon Pelipper Normal. Rainbow Badge Yamask
+                our courage will pull us through Phione Grumpig Luxray Seedot. Bubble Sapphire
+                Combusken Squirtle Gliscor Golurk Rufflet.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    /* To use grid, you have to use the display: grid property. */
+    display: grid;
+
+    /* You can set up the number of rows and their sizes using the grid-template-rows property */
+    grid-template-rows: 100px 1fr 150px;
+
+    /* You can set up the number of columns and their sizes using the grid-template-columns property */
+    grid-template-columns: 1fr;
+
+    /* For more customization, you can use the grid-template-areas property to specify which elements take up which grid area */
+    grid-template-areas: 
+            "header"
+            "main"
+            "footer";
+    
+    /* To make the body take up the whole space, I will add the min-height property and use 100vh so that it takes up the whole viewport height */
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    grid-area: header;
+
+    background-color: #63aa8f;
+}
+
+main {
+    width: 95%;
+    grid-area: main;
+
+    background-color: #4d85b6;
+    justify-self: center;
+}
+
+footer {
+    width: 100%;
+    grid-area: footer;
+
+    background-color: #c56c6c;
+}

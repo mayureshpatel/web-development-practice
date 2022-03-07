@@ -1,0 +1,25 @@
+div.box {
+    width: 350px;
+    height: 350px;
+
+    margin: 30px;
+
+    background-color: darkcyan;
+    box-shadow: 0px 0px 5px black;
+
+    display: inline-block;
+}
+
+
+div.hidden {
+    /*
+        Display none will take the element out of the page as if it did not
+        exist. But it does show up in the source page.
+    */
+    display: none;
+}
+
+div p {
+    margin: 0px;
+    padding: 50px;
+}

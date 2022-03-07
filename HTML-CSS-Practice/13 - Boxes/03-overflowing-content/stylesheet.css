@@ -1,0 +1,30 @@
+h2, p {
+    width: 400px;
+    font-size: 90%;
+    line-height: 1.2em;
+}
+
+h2 {
+    color: #0088dd;
+    border-bottom: 1px solid #000000;
+}
+
+/*
+    The overflow property tesll the browser what to do if the content contained within a box is larger than
+    the box itself. It can have one of two values:
+
+        hidden: hides any extra content that does not fit in the box
+        scroll: adds a scrollbar to the box so users can scroll to see the missing content
+*/
+p {
+    min-height: 10px;
+    max-height: 60px;
+}
+
+p.hide {
+    overflow: hidden;
+}
+
+p.scroll {
+    overflow: scroll;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Markup</title>
+</head>
+<body>
+    <!-- Semnatic markups should be used to describe the content of your web pages more accurately rather than
+         changing the way that your text looks. The main reason to use these elements is so that other programs,
+         such as screen readers or search engines, can use this extra information.
+    -->
+    
+    <h2>Strong Tag</h2>
+    <!-- The <strong> tage indicates that the content has strong importance, but by default, browsers will show the contents of <strong> in bold -->
+    <p><strong>Beware:</strong> Pickpockets operate in this area.</p>
+
+    <h2>Em Tag</h2>
+    <!-- The <em> tag indicates emphasis that subtly changes the meaning of a sentence. By default browsers will show the contents of <em> in italic -->
+    <p>I <em>think</em> Ivy was the first</p>
+    <p>I think <em>Ivy</em> was the first</p>
+
+    <!-- There are two elements commonly used for marking up quotations: <blockquote> and <q>
+         
+         The <blockquote> element is used for longer quotes that take up and entire paragraph. Browsers will indent <blockquote> elements.
+        
+         The <q> element is used for shorter quotes that sit within a <p> element. Browsers put quotes around the text inside the <q> element.
+             
+         The cite attribute can be used to indicate where the quote is from. Its value should be a URL that will have more information.
+    -->
+    <h2>Quotations Tag</h2>
+    <blockquote cite="http://en.wikipedia.org/wiki/Winnie-the-Pooh">
+        <p>Did you ever stop to think, and forget to start again?</p>
+    </blockquote>
+
+    <p>As A.A. Milne said, <q>Some people talk to animals. Not many listen though. That's the problem.</q></p>
+
+    <!-- You can use abbreviations or acronyms in your markup and have them spell out what they mean when you hover over them.
+         HTML5 uses the <abbr> tag with a title attribute that specifies what the abbreviation means
+         HTML4 also used the <acronym> tag with the title attribute. However, it is not commonly used anymore.
+    -->
+    <h2>Abbreviations Tag</h2>
+    <p><abbr title="Professor">Prof</abbr> Stephen Hawking is a theoretical physicist and cosmologist.</p>
+    <p><acronym title="National Aeronautics and Space Administration">NASA</acronym> does some crazy space stuff</p>
+
+    <!-- When you are referenceing a piece of work, the <cite> element can be used to indicate where the citation is from.
+        <cite> should not be used for a person's name.
+        Browsers will render the content of a <cite> element in italics.
+
+        <dfn> can be used to indicate the defining instance of a new term. Some browsers show the content of <dfn> in italics.
+    -->
+    <h2>Citations and Definitions Tags</h2>
+    <p><cite>A Brief History of Time</cite> by Stephen
+        Hawking has sold over ten million copies
+        worldwide.
+    </p>
+    
+    <p>A <dfn>Black Hole</dfn> is a region of space from which nothing, not even light, can escape.</p>
+
+    <!--
+        The <address> element can be used to contain contact details for the author of the page. It can contains a physical
+        address, phone number, or email address. The <address> element is generally displayed in italics.
+    -->
+    <h2>Address Tag</h2>
+    <address>
+        <p><a href="mailto:mayureshpatel@yahoo.com">mayureshpatel@yahoo.com</a></p>
+        <p>100 My Street, Dublin, IR</p>
+    </address>
+
+    <!--
+        The <ins> element can be used to show content that has been inserted into a document
+        The <del> element can be used to show content that has been deleted from a document
+
+        The content of a <ins> element is usually underlined, whereas the content of a <del>
+        element usually has a line through it.
+
+        The <s> element indicates something that is no longer accurate or relevant (but that should not be deleted).
+
+        Visually, the content of a <s> element will usually be displayed with a line through it.
+    -->
+    <h2>Inserted and Deleted Text Tags</h2>
+    <p>It was the <del>worst</del> <ins>best</ins> idea she had ever had.</p>
+</body>
+</html>

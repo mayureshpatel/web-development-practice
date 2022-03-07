@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Selector</title>
+
+    <!--
+        Using the space selector, you can select elements that have a specific attribute whose value appears in a space-separated list of words.
+
+        For example,
+
+            p[class="small-text"] will select <p> elements with the class attribute whose value is "small-text"
+            a[id="myLink"] will select <a> elements with the id attribute whose value is "myLink"
+    -->
+    <style>
+        .box {
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            padding: 5px;
+            
+            text-align: center;
+            box-shadow: 1px 1px 6px black;
+        }
+
+        /* styling all h2 elements */
+        h2 {
+            color: darkcyan;
+        }
+
+        /* style h2 elements that have a class attribute with a value of "sub-one" as one of the values */
+        h2[class~="sub-one"] {
+            text-decoration: underline;
+        }
+
+        /* style the hover of an h2 element whose class attribute has a value of "sub-one" among its values */
+        h2[class~="sub-one"]:hover {
+            color: darkturquoise;
+            cursor: not-allowed;
+        }
+
+        /* style h2 elements that have a class attribute with a value of "small-h2" as one of the values */
+        h2[class~="small-h2"] {
+            font-size: 18px;
+        }
+
+        /*
+            style h2 element that has the "h2-text" class only
+            Note: this does not select the <h2> elements that have more than one class value
+        */
+        h2[class="h2-text"] {
+            background-color: rgb(255, 157, 217);
+        }
+    </style>
+</head>
+<body>
+    <h1>Space Selector</h1>
+
+    <div class="box">
+        <h2 class="h2-text sub-one">Subheading 1</h2>
+        <p class="h2-text">Selecting h2 with &lbrack;class&equals;&ldquo;sub&dash;one&rdquo;&rbrack; attribute</p>
+    </div>
+
+    <div class="box">
+        <h2 class="h2-text small-h2">Subheading 2</h2>
+        <p class="p-text">Selecting h2 with &lbrack;class&equals;&ldquo;small&dash;h2&rdquo;&rbrack; attribute</p>
+    </div>
+
+    <div class="box">
+        <h2 class="h2-text">Subheading 3</h2>
+        <p class="p-text">Selecting h2 with &lbrack;class&equals;&ldquo;h2&dash;text&rdquo;&rbrack; attribute <strong style="text-decoration: underline;">only</strong></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Input</title>
+</head>
+<body>
+    <h1>Search Input</h1>
+
+    <!--
+        If you want to create a single line text box for search queries,
+        HTML5 provides a special type of input for that purpose.
+
+        Attributes:
+
+            type: "search" - If you want to create a single line text box for serach
+            queries, "search" will do just that. Older browsers will treat this as
+            a normal text box. New broswers will add some extra functionality such as
+            adding a cross to clear the text box.
+
+            placeholder: On any text input, you can also use this attribute whose value
+            is text that will be shown in the text box until the user click that area.
+            Older browsers will just ignore this.
+
+    -->
+    <form action="http://www.example.org/search.php">
+        <p>Search:</p>
+        <input type="search" name="search" />
+        <input type="submit" value="submit" />
+    </form>
+</body>
+</html>

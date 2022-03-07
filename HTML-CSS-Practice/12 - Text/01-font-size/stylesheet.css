@@ -1,0 +1,59 @@
+/*
+    The font-size property enables you to specify a size for the font. THere are several ways to specify the size of a font. The most common are:
+
+        Pixel: px
+            Commonly used because they allow very precise control over how much space thier text takes up.
+
+            This is the most reliable way to set the font-size because percentages and ems are more likely to vary if
+            a user has changed the default size of text in their browser. Pixels are relative to the resoultion of the
+            screen, so the same type size will look larger when a screen has a resolution of 800x600 than it would
+            be when it is 1200x800.
+
+        Percentage: %
+            The default size of text in browsers is 16px. A size of 75% would be equivalent of 12px, and 200% would be 32px.
+            Note: font-size will cascade down specificity. For example, if you set the font of the <body> to 75% (12px),
+            then set the font-size of <p> tags inside of the <body> tag to 75%, the size of the <p> tag text will be 75% of
+            12px, which is 9px.
+
+        em: em
+            An em is equivalent to the width of a letter m.
+
+            Ems allow you to change the size of text relative to the size of the text in the parent element. Since the
+            default size of text in web browsers is 16 pixesl, you can use similar rules to those shown for percentages.
+
+        Type Sizing
+
+                Pixels                      Percentages                     ems
+            
+            12 Pixel Scale
+
+                h1      24px                h1      200%                    h1      1.5em
+                h2      18px                h2      150%                    h2      1.3em
+                h3      14px                h3      117%                    h3      1.17em
+                body    12px                body    75%                     body    100%
+                                                                            p       0.75em <- IE because it is IE
+
+            16 Pixel Scale
+
+                h1      32px                h1      200%                    h1      2em
+                h2      24px                h2      150%                    h2      1.5em
+                h3      18px                h3      133%                    h3      1.125em
+                body    16px                body    100%                    body    100%
+                                                                            p       1em <- IE because it is IE
+
+        
+*/
+body {
+    font-family: Georgia, Times, serif;
+    font-size: 16px;
+}
+
+h2 {
+    /* If a font name is more than one word, it should be enclosed in double quotes */
+    font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 200%;
+}
+
+dl {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}

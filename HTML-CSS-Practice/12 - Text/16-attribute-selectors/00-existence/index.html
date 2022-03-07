@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Existence Selector</title>
+
+    <!--
+        Using the existence selector, you can select elements that have a specific attribute.
+
+        For example,
+
+            p[class] will select p elements with the class attribute, regardless of the value
+            a[id] will select <a> elements with the id attribute, regardless of the value
+    -->
+    <style>
+        .box {
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            padding: 5px;
+            
+            text-align: center;
+            box-shadow: 1px 1px 6px black;
+        }
+
+        /* styling all h2 elements */
+        h2 {
+            text-decoration: underline;
+        }
+
+        /* style h2 elements that have an id attribute */
+        h2[id] {
+            color: darkcyan;
+        }
+
+        /* style h2 elements that have a class attribute */
+        h2[class] {
+            color: lightsalmon;
+        }
+    </style>
+</head>
+<body>
+    <h1>Existence Selector</h1>
+
+    <div class="box">
+        <h2 id="sub-one">Subheading 1</h2>
+        <p class="h2-text">Selecting an h2 with &lbrack;id&rbrack; attribute</p>
+    </div>
+
+    <div class="box">
+        <h2 class="h2-text">Subheading 2</h2>
+        <p class="p-text">Selecting an h2 with &lbrack;class&rbrack; attribute</p>
+    </div>
+
+    <div class="box">
+        <h2 class="h2-text">Subheading 3</h2>
+        <p class="p-text">Selecting an h2 with &lbrack;class&rbrack; attribute</p>
+    </div>
+</body>
+</html>

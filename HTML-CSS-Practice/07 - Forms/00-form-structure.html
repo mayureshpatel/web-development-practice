@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Structure</title>
+</head>
+<body>
+    <h1>Form Structure</h1>
+
+    <!--
+        Form controls live inside a <form> element. This element should always carry the action attribute and will usually have a method and id attribute.
+
+            action: this attribute is required for all forms. Its value is the URl for the page on the server that will receive the information in the form when it is submitted.
+            method: forms can be sent using one of two methods: get or post.
+                get: the values from the form are added to the end of the URL specified in the action attribute. the get method is ideal for:
+                    short forms, when you are just retrieving data from the web server
+                
+                post: the values from the form are sent in what is known as HTTP headers. you should use the post method if your form:
+                    allows users to upload a file, is very long, contains sensitive data, adds information to, or deletes information from, a databse
+                
+                Note: if the method attribute is not used, the default method is get
+            id: the value of the id attribute is used to identify the form distinctly from other elements on the page
+    -->
+    <form action="http://www.example.com/subscribe.php" method="get">
+        <p>This is where the form controls will appear.</p>
+
+    </form>
+</body>
+</html>

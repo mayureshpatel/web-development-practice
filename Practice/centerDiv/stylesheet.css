@@ -1,0 +1,13 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my_div {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+}
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where to Place Images</title>
+</head>
+<body>
+    <!--
+        HTML elements are displayed in browsers in one of two ways: Block and Inline
+
+        Block elements: these elements always appear on a new line
+            e.g: <h1> and <p> elements
+
+            If the <img> element is followed by a block elevel element, then the block level element will sit on a new line after the images
+        
+        Inline elements: these elements sit within a block level element and do not start on a new line
+            e.g: <b>, <em>, and <img> elements.
+
+            If the <img> element is inside a block level element, any text or other inline elements will flow around the image
+    -->
+    <h1>Where to Place Images in Your Code</h1>
+
+    <hr />
+
+    <h2>Placing an Image Before a Paragraph</h2>
+    <!--
+        Placing an image before a paragraph will make the paragraph start on a new line after the image
+    -->
+    <img src="images/colognes.jpg" alt="Colognes" width="300" height="275" />
+    <p>These colognes are some of the best ones to come out in 2016. I bought these from the Tanger Outlet at a store <br />
+        called Perfumania. I thought the store itself was really small and didn't have much of a selection but they were <br />
+        organized which made the shopping experience great. I found what I wanted in just a few minutes and then shopped <br />
+        the non-brand-name colognes and found one that I really liked. It was cheaper than the brand-name ones to begin <br />
+        with and they ended up taking off another 25% from its price because I also bought 2 name-brand ones.
+    </p>
+
+    <hr />
+
+    <h2>Placing an Image Inside the Start of a Paragraph</h2>
+    <!--
+        Placing an image inside the start of a paragraph will make the first row of text align with the bottom of the image
+    -->
+    <p>
+        <img src="images/colognes.jpg" alt="Colognes" width="300" height="275" />
+        These colognes are some of the best ones to come out in 2016. I bought these from the Tanger Outlet at a store <br />
+        called Perfumania. I thought the store itself was really small and didn't have much of a selection but they were <br />
+        organized which made the shopping experience great. I found what I wanted in just a few minutes and then shopped <br />
+        the non-brand-name colognes and found one that I really liked. It was cheaper than the brand-name ones to begin <br />
+        with and they ended up taking off another 25% from its price because I also bought 2 name-brand ones.
+    </p>
+
+    <hr />
+
+    <h2>Placing an Image in the Middle of a Paragraph</h2>
+    <!--
+        Placing an image in the middle of a paragraph will cause the text to be aligned with the bottom of the image and
+        the image will cause the text on the line above to be pushed up based on the height of the image
+    -->
+    <p>
+        These colognes are some of the best ones to come out in 2016. I bought these from the Tanger Outlet at a store <br />
+        called Perfumania. I thought the store itself was really small and didn't have much of a selection but they were <br />
+        <img src="images/colognes.jpg" alt="Colognes" width="300" height="275" />
+        organized which made the shopping experience great. I found what I wanted in just a few minutes and then shopped <br />
+        the non-brand-name colognes and found one that I really liked. It was cheaper than the brand-name ones to begin <br />
+        with and they ended up taking off another 25% from its price because I also bought 2 name-brand ones.
+    </p>
+</body>
+</html>

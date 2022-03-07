@@ -1,0 +1,18 @@
+/*
+    The list-style property acts like a shorthand property that acts as a shorthand for list
+    styles. It can be used to style the marker, image, and position properties in an order.
+
+        list-style: <marker position> <marker style> <marker image>
+
+    Usually, it is used in the navigation to remove the marker by calling:
+
+        list-style: none
+*/
+ul {
+    list-style: inside circle;
+    width: 300px;
+}
+
+li {
+    margin: 10px 0px 0px 0px;
+}

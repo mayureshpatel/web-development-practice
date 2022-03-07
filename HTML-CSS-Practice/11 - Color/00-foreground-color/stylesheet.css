@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+    The color property allows you to specify the color of text inside
+    an element. You can specify any color in CSS in one of three ways:
+
+        RGB Values
+        Hex Codes
+        Color Names
+        HSL and HSLA
+*/
+h1 {
+    /* CSS has 147 predefined color names that are recognized by browsers. */
+    color: darkcyan;
+}
+
+h2 {
+    /* Hex codes are six-digit codes that represent that amount of red, green, and blue
+        in a color, preceded by a pound sign.
+    */
+    color: #ee3e80;
+}
+
+p {
+    /*
+        RGB values express colors in terms of how much red, green, and blue are used to
+        make it up.
+
+        Optionally, there is a fourth value that can be added that controls the amount
+        of opacity of the color with a value between 0 and 1. (RGBA)
+    */
+    color: rgb(0, 29, 53);
+}
+
+p a {
+    /*
+        The hsl color property describes a color by the hue, saturation, and lightness properties
+        of color.
+
+            Hue: this is expressed as an angle between 0 and 360 degrees)
+            Saturation: this is the amount of gray in a color represented by
+                a percentage between 0 and 100
+            Lightness: this is the amount of white (lightness) and balck (darkness)
+                in a color. Lightness is represented as a percentage; 0 lightness is
+                black, 100 lightness is white, and 50 lightness is normal. (aka luminosity)
+
+        There is an optional fourth value in hsl -> hsla that controls the amount of opacity
+        of the color with a value between 0 and 1.
+    */
+    color: hsl(36, 68%, 56%);
+}

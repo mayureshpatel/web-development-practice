@@ -1,0 +1,29 @@
+div.box {
+    height: 150px;
+    width: 150px;
+
+    margin: 0px;
+    padding: 0px;
+
+    border: 2px solid #000000;
+
+    text-align: center;
+}
+
+/*
+    Every box has a border which separates the edge of one box from another.
+
+    Margins sit outside the edge of the border. You can set the width of a margin to create
+    a gap between the borders of two adjacent boxes.
+
+    Padding is the space between the border of a box and any content contained within it.
+
+    In the box model, the total size of the box consists of the set height/width, or calculated
+    height/width + the size of the padding + the size of the border. Margins are not used to
+    calculate the size of the box. This can help when arranging elements on a page by
+    calculating the sizes of the borders, padding, and margins.
+*/
+div.mp {
+    margin: 10px;
+    padding: 15px;
+}

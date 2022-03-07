@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding elements down/up using JQuery</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!--
+        The JQuery slide methods slide elements up and down
+        With JQuery you can create a sliding effect on elements.
+
+        The slideToggle() method toggles the slide up/down for an element with the following syntax:
+
+            $("selector").slideToggle(speed, callback);
+
+        The speed and callback parameters are optional:
+
+            speed: "slow", "fast" or milliseconds (integer)
+            callback: a function to be executed after this function
+    -->
+    <script>
+        // When the element with id="slide-tog" is clicked, We want to select the element
+        // with the id="magic-div" and execute the slideToggle method
+        $(document).ready(function() {
+            $("#slide-tog").click(function() {
+                $(".magic-div").slideToggle(300);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Sliding Elements down/up using JQuery</h1>
+
+    <p id="slide-tog">
+        There is a panel below that can be slid down/up by clicking on this &lt;p&gt;
+    </p>
+
+    <div class="magic-div" style="border: 2px solid black;">
+        <p>
+            Pikachu ipsum dolor sit amet magna magna hitmonchan weezing irure laboris alakazam
+            consequat. Sandshrew officia duis ex fearow abra. Machoke ut sunt, squirtle marowak
+            irure poliwrath exeggutor charizard omanyte pikachu labore exeggcute sint dolore.
+            Dolor sint aute velit cillum dragonite laboris pinsir non.
+        </p>
+    </div>
+</body>
+</html>

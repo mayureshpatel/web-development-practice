@@ -1,0 +1,18 @@
+div.border-img {
+    border: 100px solid black;
+
+    /*
+        The border-image property applies an image to the border of any box.
+        It takes a background image and slices it into nine pieces.
+
+        There are three required values for this property:
+
+            url: the url of the image
+            slice: where to slice the image
+            repeat: specifies how the images for the sides and the middle part
+                of the border image are scaled and tiled. So, you can specify
+                two values here. If the second value is omitted, it is assumed
+                to be the same as the first
+    */
+    border-image: url("../../05 - Images/images/sunset.jpg") 100% stretch;
+}

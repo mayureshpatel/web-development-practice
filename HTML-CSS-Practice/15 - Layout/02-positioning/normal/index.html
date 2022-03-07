@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normal Positioning: Static</title>
+
+    <style>
+        h1, div {
+            width: 400px;
+
+            /*
+                The property position is, by defualt, set to static. This will make the
+                block-level element sit on top of the next one. You don't need to explicity
+                tell the browser to do this.
+            */
+            position: static;
+
+            background-color: lightskyblue;
+        }
+
+        p {
+            width: 300px;
+
+            position: static;
+
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Normal Flow:
+
+        Every block-level element appears on a new line, causing each item
+        to appear lower down the page than the previous one. Even if you specify
+        the width of the boxes and there is space for two elements to sit side by
+        side, they will not appear next to each other. This is the defualt behavior
+        (unless you specify otherwise).
+    -->
+    <h1>Normal Positioning: Static</h1>
+
+    <div>
+        <p>
+            V for victory Phanpy Badge Virizion Beedrill I like shorts Litwick. Soul Badge
+            Charizard Water Gun Dustox Kanto Munchlax Exeggcute. Mewtwo Strikes Back Xatu
+            sunt in culpa qui officia Tympole Flareon Pelipper Normal. Rainbow Badge Yamask
+            our courage will pull us through Phione Grumpig Luxray Seedot. Bubble Sapphire
+            Combusken Squirtle Gliscor Golurk Rufflet.
+        </p>
+    </div>
+
+    <p>
+        This is another line
+    </p>
+
+    <div>
+        <p>
+            V for victory Phanpy Badge Virizion Beedrill I like shorts Litwick. Soul Badge
+            Charizard Water Gun Dustox Kanto Munchlax Exeggcute. Mewtwo Strikes Back Xatu
+            sunt in culpa qui officia Tympole Flareon Pelipper Normal. Rainbow Badge Yamask
+            our courage will pull us through Phione Grumpig Luxray Seedot. Bubble Sapphire
+            Combusken Squirtle Gliscor Golurk Rufflet.
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+#ignore all video files
+*.mp4
+*.mov
+
+#ignore all photos
+*.jpg
+*.JPG
+*.gif
+*.png
+*.PNG
+
+#ignore logs
+*.log

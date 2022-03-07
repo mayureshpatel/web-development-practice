@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Select Box</title>
+</head>
+<body>
+    <h1>Multiple Select Box</h1>
+
+    <!--
+        A multiple select box allows users to select zero or more options from the list.
+
+            size: You can turn a drop down select box into a box that shows more than one
+            option by adding the size attribute. Its value should be the number of options
+            you want to show at once. Browser support is not accross the board, so this
+            should be tested on all browsers when being used.
+
+            multiple: You should add this attribute with a value of "multiple" when you want
+            to create a multiple select box. It is also a good idea to let users know that
+            they can select more than one option by holding down the CRTL/Command button.
+    -->
+    <form action="http://www.example.com/profile.php">
+        <p>
+            Do you play any of the following instruments?
+            (You can select more than one option by holding
+            down control on a PC or command key on a Mac
+            while selecting different options.)
+        </p>
+
+        <select name="insturments" size="3" multiple="multiple">
+            <option value="guitar" selected="selected">Guitar</option>
+            <option value="drums">Drums</option>
+            <option value="keyboard">Keyboard</option>
+            <option value="bass">Bass</option>
+        </select>
+    </form>
+</body>
+</html>

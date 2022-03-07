@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Form Elements</title>
+</head>
+<body>
+    <h1>Grouping Form Elements</h1>
+
+    <!--
+        You can group related form controls together inside the <fieldset> element. this
+        is particularly helpful for longer forms.
+
+        Most browsers will show the fieldset with a line around the edge to show how they are
+        related. The appearance of these lines can be adjusted using CSS.
+
+        Elements:
+
+            <legend>: this can come directly after the opeing <fieldset> tag and contains a
+                caption which helps identify the purpose of that group of form controls.
+    -->
+    <form action="http://www.example.com/profile.php">
+        <fieldset>
+            <legend>Contact Details</legend>
+            
+            <label>
+                Email:
+                <input type="text" name="email" />
+            </label>
+            <br />
+
+            <label>
+                Mobile:
+                <input type="text" name="mobile" />
+            </label>
+            <br />
+
+            <label>
+                Telephone:
+                <input type="text" name="telephone" />
+            </label>
+        </fieldset>
+    </form>
+</body>
+</html>

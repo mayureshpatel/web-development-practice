@@ -1,0 +1,36 @@
+div.box {
+    width: 350px;
+    height: 350px;
+
+    margin: 30px;
+
+    background-color: darkcyan;
+    box-shadow: 0px 0px 5px black;
+
+    display: inline-block;
+}
+
+
+div.hidden {
+    /*
+        The visibility property allows you to hide boxes from users but it leaves
+        a space where the element would have been.
+
+        This property can take two values:
+
+            hidden: hides the element
+            visible: shows the element
+
+        If the visibility of an element is set to hidden, a blank space will appear
+        in its place.
+
+        If you do not want a blak space to appear, then you should use the display
+        property with a value of none instead.
+    */
+    visibility: hidden;
+}
+
+div p {
+    margin: 0px;
+    padding: 50px;
+}

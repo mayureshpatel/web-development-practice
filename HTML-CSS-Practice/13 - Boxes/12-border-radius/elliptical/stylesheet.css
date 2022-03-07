@@ -1,0 +1,36 @@
+div {
+    width: 350px;
+    height: 350px;
+
+    margin: 30px;
+
+    background-color: black;
+    box-shadow: 0px 0px 20px yellow;
+}
+
+div.corner0 {
+    /*
+        To create more complex shapes, you can specify different distance for the horizontal and the vertical
+        parts of the rounded corners using:
+            
+            border-radius: <horizontal> <vertical>
+
+        You can also target just one corner using the individual properties for that corner:
+
+            border-top-left-radius: <horzontal> <vertical>
+
+        There is another shorthand for all corners and both horizontal and vertical: 
+
+            border-radius: <horizontal-top-right> <horizontal-bottom-right> <horizontal-bottom-left> <horizontal-top-left> / <vertical-top-right>
+                                <vertical-bottom-right> <vertical-bottom-left> <vertical-top-left>
+    */
+    border-top-left-radius: 150px 80px;
+}
+
+div.corner1 {
+    border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+}
+
+div.corner2 {
+    border-radius: 100px;
+}

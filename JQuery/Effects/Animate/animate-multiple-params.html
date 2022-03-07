@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Animations</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--
+        The params parameter below can take multiple CSS property/value pairs to animate
+        more than one property at a time.
+
+            $("selector").animate({params}, speed, callback);
+
+        Parameters:
+            The required params parameter defines the CSS properties to be animated
+            The optional speed parameter specifies the duration of the effect. It can take these values:
+                "slow", "fast", and and integer as milliseconds
+            The optional callback parameter is a function to be executed after the animation completes.
+    -->
+    <script>
+        /* 
+            The animate method takes CSS properties that have a single numeric property. Most properties that
+            are non-numeric cannot be animated using basic jQuery functionality. For example, you can animate
+            width, height, or left but background-color cannot be animated without using the jQuery.Color plugin.
+
+            Some non-style properties such as 'scrollTop' and 'scrollLeft', as well as custom properties,
+            can be animated.
+            
+            Each property can also take the strings 'show', 'hide', and 'toggle' to allow for custom hiding
+            and showing animations that take into account the display type of the element.
+        */
+         $(document).ready(function() {
+            $("#btn").click(function() {
+                $(".box").animate({left: '100px', top: '50px', borderWidth: '12px'});
+            });
+        });
+    </script>
+
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+
+            background-color:  #ff8500;
+            border: 2px solid black;
+
+            position: relative;
+        }
+
+        h1 {
+            position: absolute;
+            width: 50%;
+            margin: 0 auto;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <input type="button" id="btn" name="sub-button" value="Move Box" />
+    <div class="box">
+        <h1>Hello World</h1>
+    </div>
+</body>
+</html>

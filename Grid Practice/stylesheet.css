@@ -1,0 +1,37 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 100px 1fr 150px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+            "header"
+            "main"
+            "footer";
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    grid-area: header;
+
+    background-color: #63aa8f;
+}
+
+main {
+    width: 95%;
+    grid-area: main;
+
+    background-color: #4d85b6;
+    justify-self: center;
+}
+
+footer {
+    width: 100%;
+    grid-area: footer;
+
+    background-color: #c56c6c;
+}

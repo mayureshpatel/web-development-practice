@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linking to other pages on the same site</title>
+</head>
+<body>
+    <h2>Linking to other pages on the same site</h2>
+
+    <!--
+        When linking to other pages on the same site, you don't have to give the absolute url.
+        You can use a shorthand known as a relative url.
+
+        If all the pages are in the same folder, then the value of the href is just the name of
+        the file.
+
+        Otherwise, if the pages are in different folders, you will need to indicate which folder
+        it is in by "walking" to the that folder.
+
+            Walking to a file:
+
+                Example Structure:
+                    examplearts
+                        index.html
+                        images
+                            logo.gif
+                        movies
+                            cinema
+                                index.html
+                                listings.html
+                                reviews.html
+                            dvd
+                                index.html
+                                reviews.html
+                                listings.html
+                        music
+                            index.html
+                            listings.html
+                            reviews.html
+                        theater
+                            index.html
+                            listings.html
+                            reviews.html
+
+                1) If you are currently in examplearts/movies/index.html and you want to get to music/index.html
+                    ../../../music/index.html     -> you have to walk backwards using ../ up to the examplearts folder to go into the music folder
+    -->
+    <p>
+        <ul>
+            <li><a href="writing-links.html">Writing Links</a></li>
+        </ul>
+    </p>
+</body>
+</html>

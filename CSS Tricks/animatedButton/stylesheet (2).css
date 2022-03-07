@@ -1,0 +1,128 @@
+/* 
+    - Margin/Padding: to be 0 for all elements.
+    - Box-Sizing: is set to border-box to couple content and border of the box
+*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*
+    - Height: sets the height of the body to be 100% of the viewport
+    - Display: sets the layout of child elements to be flex
+    - Align-Items: aligns items in the cross axis for all child elements
+    - Justify-Content: distributes the space so that the elements are in the center
+    - Background-Color: sets the color of the background
+*/
+body {
+    height: 100vh;
+    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: darkslategrey;
+}
+
+/*
+    - Display: sets the layout of child elements to be flex
+    - Align-Items: aligns child items in the cross axis to be centered
+    - Justify-Content: distributes the space around/between elements to center them
+    - Width/Height: sets the width/height of the element
+    - border: sets the border width, type, and color
+    - Border-Radius: sets the border radius
+    - Background: implicitly sets the background-color to transparent
+    - Transition: sets the transition-duration value
+*/
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 50px;
+    border:  3px solid #f2c623;
+    border-radius: 100px;
+    background: none;
+    
+    cursor: pointer;
+
+    transition: 500ms;
+}
+
+/*
+    - Position: absolute positioning removes the element from the normal document
+            flow. It is positioned relative to its closes positioned relative.
+    - fill: Paints the interior of this element to be transparent
+    - font-size: used to set the font size of svg elements
+*/
+span, svg {
+    position: absolute;
+    color: #f2c623;
+    fill: transparent;
+    font-size: 20px;
+}
+
+/*
+    - font-size: when the button is hovered over, change the font-size
+*/
+button:hover {
+    font-size: 14px;
+}
+
+/*
+    On focus
+
+    - outline: remove the outline associated with focus
+    - border: set a 2px solid transparent border
+    - width: set the width of the button to be 50px
+    - border-left: set a 2px solid yellow border on the left
+    - border-bottom: set a 2px solid yellow border on the bottom
+
+*/
+button:focus {
+    outline: none;
+    border: 2px solid transparent;
+    width: 50px;
+    border-left: 2px solid #f2c623;
+    border-bottom: 2px solid #f2c623;
+    animation: spin 2s 500ms forwards;
+}
+
+button:focus span {
+    color: transparent;
+}
+
+button:focus svg {
+    animation: check 500ms 2300ms forwards;
+}
+
+@keyframes spin {
+    30% {
+        border: 5px solid transparent;
+        border-bottom: 50px solid green;
+    }
+    80% {
+        border: 2px solid transparent;
+        border-left: 2px solid #f2c623;
+        border-right: 2px solid blue;
+    }
+
+    100% {
+        transform: rotate(1080deg);
+        border: 2px solid #f2c623;
+    }
+}
+
+@keyframes check {
+    to {
+        fill: #f2c623;
+    }
+}
+
+@keyframes circle {
+    to {
+        border: 2px solid #f2c623;
+    }
+}

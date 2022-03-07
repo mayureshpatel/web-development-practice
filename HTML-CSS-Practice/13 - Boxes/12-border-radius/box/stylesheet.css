@@ -1,0 +1,27 @@
+div {
+    width: 350px;
+    height: 350px;
+
+    margin-left: 30px;
+
+    background-color: black;
+    box-shadow: 0px 0px 20px yellow;
+}
+
+div.corner-round {
+    /*
+        This property allows rounding the corners of any box. The value
+        indicates the size of the radius in pixels. There are two ways to
+        specify the values for rounding the corners:
+
+            1) Specify a specific corner:
+                border-top-right-radius
+                border-bottom-right-radius
+                border-bottom-left-radius
+                border-top-left-radius
+
+            2) Use the shorthand property:
+                broder-radius: <top-right> <bottom-right> <bottom-left> <top-left>
+    */
+    border-radius: 50px;
+}

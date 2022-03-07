@@ -1,0 +1,28 @@
+h1 {
+    width: 75%;
+    margin: 0 auto;
+
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+table {
+    margin: 0 auto;
+}
+
+/*
+    The min-width property specifies the smallest size a box can be displayed at when
+    the browser window is narrow, and the max-width property indicates the maximum
+    width a box can stretch when the browser window is wide.
+
+    These properties ensure that the content of pages are legible.
+*/
+td.description {
+    min-width: 350px;
+    max-width: 650px;
+
+    text-align: left;
+    
+    padding: 5px;
+    margin: 0px;
+}

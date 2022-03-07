@@ -1,0 +1,29 @@
+/*
+    @font-face allows you to use a font, even if it is not installed on the computer of the person
+    browsing, by allowing you to specify a path to a copy of the font, whcih will be downloaded
+    if it is not on the user's machine.
+
+    @font-face should have the following:
+        font-family: specifies the name of the font which can then be used as a value of the font-family property
+        src: specifies the path to the font. in order to work in all browsers, it is good practice to specify paths
+            to different versions of the font
+        format: specifes the format that the font is supplied in because different browsers support different formats
+
+    Your site should have these formats; at least:
+
+        eot, woff, ttf/otf, svg
+*/
+
+@font-face {
+    src: url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+    font-family: "Satisfy", cursive;
+
+}
+body {
+    font-family: "Satisfy", cursive;
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 200%;
+}

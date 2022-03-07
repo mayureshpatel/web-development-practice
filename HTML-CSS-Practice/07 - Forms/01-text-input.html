@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Input</title>
+</head>
+<body>
+    <h1>Text Input</h1>
+
+    <!--
+        The <input> element is used to create several differnt form controls. The value of the type
+        attribute determines what kind of input they will be creating.
+
+            type: when the type attribute is set to "text", it creates a single-line text input
+            
+            name: when users enters information into a form, the server needs to know which form control
+            each piece of data was entered into. Therefore, each form controls requires a name attribute.
+            The value fo this attribute identifies the form controls and is sent along with the information
+            they enter to the server.
+            
+            size: Should not be used on new forms. It was used in older forms to indicate the width of the
+            the text input, measured in the number of characters seen. In new forms, CSS should be used to
+            control the width of form elements.
+            
+            maxlength: You can use the maxlength attribute to limit the number of characters a user may enter
+            into the text field. Its value is the number of characters they may enter. 
+    -->
+    <form action="http://www.example.com/login.php">
+        <p>
+            Username:
+            <input type="text" name="username" size="15" maxlength="30" />
+        </p>
+    </form>
+</body>
+</html>

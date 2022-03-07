@@ -1,0 +1,165 @@
+p {
+    width: 100%;
+    height: 30px;
+
+    margin: 10px auto;
+}
+
+p.tenpx-width {
+    border-style: solid;
+    border-width: 10px;
+
+    margin: 10px 0px 10px -10px;
+}
+
+p.thick-width {
+    border-style: solid;
+    border-width: thick;
+
+    margin: 10px 0px 10px -5px;
+}
+
+p.thin-width {
+    border-style: solid;
+    border-width: thin;
+
+    margin: 10px 0px 10px -1px;
+}
+
+p.var-width {
+    border-style: solid;
+    border-width: 2px 4px 6px 8px;
+
+    margin: 10px 0px 10px -7px;
+}
+
+p[class*="-border"] {
+    margin: 10px 0px 10px -1.2px;
+}
+
+p.solid-border {
+    border-style: solid;
+}
+
+p.dotted-border {
+    border-style: dotted;
+}
+
+p.dashed-border {
+    border-style: dashed;
+}
+
+p.double-border {
+    border-style: double;
+}
+
+p.groove-border {
+    border-style: groove;
+}
+
+p.ridge-border {
+    border-style: ridge;
+}
+
+p.inset-border {
+    border-style: inset;
+}
+
+p.outset-border {
+    border-style: outset;
+}
+
+p.colored-brdr {
+    border: 2px solid #ef4b45;
+
+    margin: 10px 0px 10px -2px;
+}
+
+p.multicolor-brdr {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ef4b45 #43ff10 #8940ff lightskyblue;
+
+    margin: 10px 0px 10px -3px;
+}
+
+div.bw {
+    /*
+        You can control the style of a border using the border-style property.
+        This property can take the following values:
+
+            solid: a single solid line
+            dotted: a series of square dots ([n] pixel by [n] pixel dots with [n] pixel gap)
+            dashed: a series of short lines
+            double: two solid lines
+            groove: appears to be carved into the page
+            ridge: appears to stick out from the page
+            inset: appears embedded into the page
+            outset: appears as if it is coming out of the screen
+            hidden/none: no border is shown
+
+        You can individually change the styles of different borders using:
+
+            border-top-style
+            border-right-style
+            border-bottom-style
+            border-left-style
+    */
+    border-style: solid;
+    
+    /*
+        The border-width property is used to control the width of a border.
+        The value of this property can either be given in pixesl or using
+        one of the following:
+
+            thin
+            medium
+            thick
+
+        You can control the individual size of borders using four separate properties:
+
+            border-top-width
+            border-right-width
+            border-bottom-width
+            border-left-width
+
+        You can also specify different width for the four border values in one property:
+
+            border-width: 2px 1px 1px 2px;   *values appear clockwise: top, right, bottom, left
+    */
+    border-width: 3px;
+
+    /*
+        You can specify th ecolor of a broder using either rgb values, hex codes, HSL values, or CSS color names.
+
+        It is possible to also individually control the colors of the borders on different sides
+        of a box using:
+
+            border-top-color
+            border-right-color
+            border-bottom-color
+            border-left-color
+
+        It is also possible to use a shorthand to control all four border colors in the one property:
+
+            border-color: darkcyan deeppink darkblue green;     *values appear clockwise: top, right, bottom, left
+    */
+    border-color: #ef4b45;
+}
+
+div.sh {
+    /*
+        The border property allows you to specify the width, style, and color of a border
+        in one property (in that order).
+    */
+    border: 6px groove #ef4b45;
+}
+
+div.box {
+    width: 260px;
+    padding: 5px;
+    margin: 10px 0px;
+
+    border: 1px solid black;
+    text-align: center;
+}

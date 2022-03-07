@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings Selector</title>
+
+    <!--
+        Using the 3 string selectors, you can select elements whose attributes have the specifed string or letter:
+
+            Prefix: [^=] matches a specific attribute whose value begins with a specific string
+            Substring: [*=] matches a specific attribute whose value contains a specific substring
+            Suffix: [$=] matches a specific attribute whose value ends with a specific string
+    -->
+    <style>
+        .box {
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            padding: 5px;
+            
+            text-align: center;
+            box-shadow: 1px 1px 6px black;
+        }
+
+        /* styling <h2> with a class that starts with "t" */
+        h2[class^="t"] {
+            color: darkolivegreen;
+            text-decoration: underline;
+        }
+
+        /* styling <p> with an id that starts with "g" */
+        p[id^="g"] {
+            border: 1px solid lightsalmon;
+        }
+
+        /* stying <p> with an id that ends with "y" */
+        p[id$="y"] {
+            color: lightskyblue;
+            font-size: 18px;
+
+        }
+
+        /* styling <p> with a class that has the substring "hello" */
+        p[class*="hello"]:hover {
+            color: seagreen;
+            box-shadow: 0px 0px 5px black;
+            cursor: not-allowed;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Strings Selector</h1>
+
+    <div class="box">
+        <h2 class="text-heading">Subheading 1</h2>
+        <p class="ydthellotrs" id="funny">Selecting h2 with &lbrack;class<sup>&and;</sup>&equals;&ldquo;t&rdquo;&rbrack; attribute</p>
+    </div>
+
+    <div class="box">
+        <h2 class="next-heading">Subheading 2</h2>
+        <p class="asehelloaspe" id="scarey">Selecting p with &lbrack;class&Tilde;&equals;&ldquo;hello&rdquo;&rbrack; attribute</p>
+    </div>
+
+    <div class="box">
+        <h2 class="next-heading">Subheading 3</h2>
+        <p class="eushelloeasw" id="gloomy">Selecting p with &lbrack;class&dollar;&equals;&ldquo;y&rdquo;&rbrack; attribute</p>
+    </div>
+</body>
+</html>

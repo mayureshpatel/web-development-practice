@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Input Box</title>
+</head>
+<body>
+    <h1>File Input Box</h1>
+
+    <!--
+        If you want to allow users to upload a file, you will need to use a file
+        input box.
+
+            type: the value of this attribute should be "file". this will create
+            a box that looks like a text input followed by a browse button. When
+            the user click on the browse button, a window opens up that allows
+            then to select a file from their computer to be uploaded to the
+            website.
+
+            method: when users will need to upload files, you should use the POST method.
+    -->
+    <form action="http://www.example.com/upload.php" method="post">
+        <p>Upload your song in MP3 format:</p>
+        <input type="file" name="user-song" /> <br />
+        <input type="submit"  value="Upload" />
+    </form>
+</body>
+</html>

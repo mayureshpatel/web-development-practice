@@ -1,0 +1,33 @@
+div {
+    width: 350px;
+    height: 350px;
+
+    margin: 10px 10px;
+
+    background-color: darkgreen;
+}
+
+/*
+    The box-shadow property allows you to add a drop shadow around a box.
+    It works just like the text-shadow property. It must use at least the
+    first of these two values as well as color:
+
+        horizontal offset: position the box-shadow left or right
+        vertical offset: position the box-shadow above or below
+        blur distance: blur of the shadow; if omitted, the shadow is a solid line
+        spread of shadow: spreads the shadow outwards or inwards
+*/
+div.shadow5 {
+    box-shadow: 5px -5px 3px #000000;
+}
+
+div.shadow0 {
+    box-shadow: 0px 0px 10px #000000;
+}
+
+/*
+    The inset keyword can also be used before the values to create an inner shadow.
+*/
+div.shadow-in {
+    box-shadow: inset 0px 0px 20px #000000;
+}

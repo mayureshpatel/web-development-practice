@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Videos</title>
+</head>
+<body>
+    <h1>HTML Videos</h1>
+
+    <!--
+        You can add videos to your web pages using the <video> element.
+
+        The <video> element has a number of attributes which allow you to
+        control video playback:
+
+            src: specifies the path to the video
+            poster: allows you to specify an image to show while the video
+                is downloading or until the user tells the video to play
+            width: specifies the width of the video
+            height: specifies the height of the video
+            controls: indicates that the browser should supply its own controls
+                for playback
+            autoplay: specifies that the file should play automatically
+            loop: indicates that the video should start playing again once
+                it has ended
+            preload: tells the browser what to do when the page loads. It
+                can have one of three values:
+
+                    none: the browser should not load the video until the
+                        user presses play
+
+                    auto: the browser should download the video when the page
+                        loads
+
+                    metadata: the browser should just collect information such
+                        as the size, first frame, track list, and duration
+    -->
+    <video src="videos/20150726_22434415.mp4"
+        poster="images/20150726_13471700.jpg"
+        width="400" height="300"
+        preload="auto"
+        controls
+        loop>
+        
+        <p>A video of our trip to six flags</p>
+    </video>
+
+    
+</body>
+</html>

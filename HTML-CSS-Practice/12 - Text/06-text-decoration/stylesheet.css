@@ -1,0 +1,25 @@
+/*
+    The text-decoration property allows you to specify the following values: 
+
+        none: removes any decoration already applied to the text
+        underline: add a line underneath the text
+        overline: adds a line over the top of the text
+        line-through: adds a line through words
+        blink: animates the text to make it flash on and off (this is generally a bad idea)
+*/
+body {
+    font-family: Georgia, Times, serif;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+h2 {
+    /* If a font name is more than one word, it should be enclosed in double quotes */
+    font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 200%;
+    text-decoration: underline;
+}
+
+dl {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}

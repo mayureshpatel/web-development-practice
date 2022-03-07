@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding elements down using JQuery</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!--
+        The JQuery slide methods slide elements up and down
+        With JQuery you can create a sliding effect on elements.
+
+        The slideDown() method slides an element down with the following syntax:
+
+            $("selector").slideDown(speed, callback);
+
+        The speed and callback parameters are optional:
+
+            speed: "slow", "fast" or milliseconds (integer)
+            callback: a function to be executed after this function
+    -->
+    <script>
+        // When the element with id="slide-down" is clicked, We want to select the element
+        // with the id="magic-div" and execute the slideDown method (which )
+        $(document).ready(function() {
+            $("#slide-down").click(function() {
+                $(".magic-div").slideDown(300);
+            });
+        });
+    </script>
+
+    <style>
+        /* Because we are sliding the element down, we need to initialize it with
+           display: none. The slideDown function essentially makes the element have
+           a display attribute added on
+        */
+        .magic-div {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sliding Elements down using JQuery</h1>
+
+    <p id="slide-down">
+        There is a panel below that can be slid down by clicking on this &lt;p&gt;
+    </p>
+
+    <div class="magic-div" style="border: 2px solid black;">
+        <p>
+            Pikachu ipsum dolor sit amet magna magna hitmonchan weezing irure laboris alakazam
+            consequat. Sandshrew officia duis ex fearow abra. Machoke ut sunt, squirtle marowak
+            irure poliwrath exeggutor charizard omanyte pikachu labore exeggcute sint dolore.
+            Dolor sint aute velit cillum dragonite laboris pinsir non.
+        </p>
+    </div>
+</body>
+</html>

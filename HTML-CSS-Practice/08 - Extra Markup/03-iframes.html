@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iFrames</title>
+</head>
+<body>
+    <h1>iFrames</h1>
+
+    <!--
+        An iframe is like a little window that has been cut into your page - and
+        in that window you can see another page.
+
+            iframe = inline frame
+
+        One common use of iframes is to embed a Google Map into a page. The content
+        of the iframe can be any html page.
+
+        An iframe is created using the <iframe> element. These are a few attributes
+        that you will need to know to use it:
+
+            src: specifies the URL of the page to show in the frame
+            height: specifies the height of the iframe in pixels
+            width: specifies the width of the iframe in pixels
+            scrolling: (not supported in HTML5) indicates whether an iframe should
+                have scroll bars or not
+            frameborder: (not supported in HTML5) indicates whether the frame should
+                have a border or not
+            seamless: can be added to an iframe where scrollbars are not desired; does
+                not need a value, but some authors will give it a value of seamless
+    -->
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/hoNb6HuNmU0"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+</body>
+</html>

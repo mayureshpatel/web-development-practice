@@ -1,0 +1,24 @@
+h2, p {
+    width: 400px;
+    font-size: 90%;
+    line-height: 1.2em;
+}
+
+h2 {
+    color: #0088dd;
+    border-bottom: 1px solid #000000;
+}
+
+/*
+    In the same way that you might want to limit the width of a box on a page, you 
+    may also want to limit the height of it. This is achieved using the min-height
+    and max-height properties.
+
+    NOTE: If the box is not big enough to hold the content, and the content expands
+    outside the box it can look very messy. To control what happens when there is not
+    enough space for the content of a box, you can use the overflow property.
+*/
+p {
+    min-height: 10px;
+    max-height: 30px;
+}

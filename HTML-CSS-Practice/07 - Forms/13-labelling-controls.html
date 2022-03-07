@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labelling Form Controls</title>
+</head>
+<body>
+    <h1>Labelling Form Controls</h1>
+
+    <!--
+        Each form controls should have its own <label> element as this makes the form
+        accessible to vision-impaired users. The <label> element can be used in two ways:
+            
+            1. Wrap around both the text description and the form input.
+            2. Be kept seperate form the form controls and use the for attribute to indicate
+            which form control it is a label for.
+
+        Attributes:
+
+            for: this attribute states which form control the label belongs to. The value of the id
+            attribute uniquely identifies an element from all other elements on a page. The value
+            of the for attribute matches that of the id attribute on the form control it is labelling.
+
+        Positioning:
+
+            As a rule of thumb, these are the best places to place labels on form controls:
+
+                Above or the the left:
+                    text inputs
+                    text areas
+                    select boxes
+                    file uploads
+
+                To the right:
+                    individual checkboxes
+                    individual radio buttons
+    -->
+    <form action="http://www.example.com/profile.php">
+        <label>Age: <input type="text" name="age" /></label>
+
+        <br />
+        Gender:
+
+        <input id="female" type="radio" name="gender" value="f" />
+        <label for="female">Female</label>
+
+        <input id="male" type="radio" name="gender" value="m" />
+        <label for="male">Male</label>
+    </form>
+</body>
+</html>

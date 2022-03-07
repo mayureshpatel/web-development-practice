@@ -1,0 +1,69 @@
+div.box-pad {
+    /*
+        Set the size of the box
+    */
+    width: 300px;
+    height: 350px;
+
+    /*
+        Distinguish the box's size and border
+    */
+    border: 5px solid #cd00cd;
+    background-color: royalblue;
+
+    /* Center the box */
+    margin: 0 auto;
+
+    /*
+        The padding property allows you to specify how much aspce should appear between
+        the content of an element and its border.
+
+        The value of this property is most often specified in pixels (although it is possible
+        to use percentage and ems). If a percentage is used, the padding is a percentage of
+        the browser window (or of the containing box if it is inside of a box).
+
+        NOTE: If a width is specified for a box, padding is added onto the width of the box.
+
+        There are three ways to use this property:
+
+            shorthand -> padding: <top> <right> <bottom> <left>
+
+            Specifying one particular padding ->
+
+                padding-top:
+                padding-right:
+                padding-bottom:
+                padding-left:
+
+            Specifying the top and bottom padding only
+
+                padding: <top and bottom> <left and right>
+                
+        NOTE: Padding is not inherited by child elements in the same way that the color value of
+        the font-family poperty is; so you need to specify the padding for every element that 
+        needs to use it.
+    */
+    padding: 10px 10px 20px 30px;
+}
+
+div.box-pad p {
+    /*
+        reset the margins of the p element
+    */
+    margin: 0px;
+
+    color: white;
+    text-align: center;
+
+    /*
+        the p element should take up all the space available inside the div to show
+        where the padding is
+    */
+    width: 100%;
+    height: 100%;
+
+    /*
+        the p element background color should show how big the p element is
+    */
+    background-color: darkcyan;
+}

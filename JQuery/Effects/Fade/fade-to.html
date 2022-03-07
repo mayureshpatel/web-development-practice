@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fading elements using JQuery</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!--
+        The JQuery fadeTo() method allows fading to a given opacity (between 0 and 1).
+
+            $("selector").fadeTo(speed, opacity, callback);
+
+        The speed, opacity, and callback parameters are optional.
+
+            speed: "slow", "fast", or milliseconds(integer)
+            opacity: between 0 and 1
+            callback: a function to be executed after the hide/show method
+    -->
+    <script>
+        $(document).ready(function() {
+            $("#fade-to-full").click(function() {
+                $(".magic-div").fadeTo(500, 1);
+            });
+        });
+        
+        $(document).ready(function() {
+            $("#fade-to-half").click(function() {
+                $(".magic-div").fadeTo(500, 0.25);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Fading Elements using JQuery</h1>
+
+    <p id="fade-to-half">
+        There is a panel below that can be toggled to fade to 25&percnt; opacity by clicking on this &lt;p&gt;
+    </p>
+
+    <p id="fade-to-full">
+        There is a panel below that can be toggled to fade to 100&percnt; opacity by clicking on this &lt;p&gt;
+    </p>
+    <div class="magic-div" style="border: 2px solid black;">
+        <p>
+            Pikachu ipsum dolor sit amet magna magna hitmonchan weezing irure laboris alakazam
+            consequat. Sandshrew officia duis ex fearow abra. Machoke ut sunt, squirtle marowak
+            irure poliwrath exeggutor charizard omanyte pikachu labore exeggcute sint dolore.
+            Dolor sint aute velit cillum dragonite laboris pinsir non.
+        </p>
+    </div>
+</body>
+</html>

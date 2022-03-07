@@ -1,0 +1,48 @@
+div {
+    margin: 10px;
+    padding-bottom: 10px;
+    width: 290px;
+
+    border-bottom: 1px solid #efefef;
+}
+
+div:hover {
+    /*
+        The cursor property allows you to control the type of mouse cursor
+        that should be displayed to users.
+
+        There are a lot of values that can be used, however, the following are
+        the most common:
+
+            auto
+            crosshair
+            default
+            pointer
+            move
+            text
+            wait
+            help
+            url("cursor.gif");
+    */
+    cursor: move;
+}
+
+.title {
+    width: 100px;
+    padding-right: 10px;
+    float: left;
+
+    text-align: right;
+}
+
+.radio-buttons label {
+    float: none;
+}
+
+.submit {
+    text-align: right;
+}
+
+.submit:hover {
+    cursor: grab;
+}

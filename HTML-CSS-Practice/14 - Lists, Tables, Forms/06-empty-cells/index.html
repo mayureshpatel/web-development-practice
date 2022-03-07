@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border on Empty Cells</title>
+
+    <style>
+        td {
+            border: 1px solid #0088dd;
+            padding: 15px;
+        }
+
+        table {
+            display: inline-block;
+            margin: 20px;
+        }
+
+        table.one {
+            /*
+                If you have empty cells in your table, then you can use the
+                empty-cells property to specify whether or not their borders
+                should be shown.
+
+                Since browsers treat empty cells in different ways, if you
+                want to explicityly show or hide borders on any empty cells
+                then you should use this property.
+
+                It can take three values:
+                    show: shows the border of any empty cells
+                    hide: hides the border or any empty cells
+                    inherit: If you have one table nested inside another, the inherit
+                        value instructs the table cells to obey the rules of the
+                        containing table.
+            */
+            empty-cells: show;
+        }
+
+        table.two {
+            empty-cells: hide;
+        }
+    </style>
+</head>
+<body>
+    <h1>Border on Empty Cells</h1>
+
+    <table class="one">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <table class="two">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

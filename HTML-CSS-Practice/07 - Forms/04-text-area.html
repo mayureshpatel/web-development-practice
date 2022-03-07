@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Area</title>
+</head>
+<body>
+    <h1>Text Area</h1>
+
+    <!--
+        The <textarea> element is used to create a multi-line text input. Unline other input elements
+        this is not an empty element. It should have opening and closing tags.
+
+        Any text that appears between the opening <textarea> and the the closing </textarea> tage will
+        appear in the box when the page loads
+
+        If the text between the tags is not deleted by the user, then the text will get sent to the server
+        along with whatever the user has typed.
+
+        cols and rows is the older way of giving the textarea control a width and height. The new way
+        uses CSS and these attributes should not be used. 
+    -->
+    <form action="http://www.example.com/login.php">
+        <p>What did you think of this gig?</p>
+        <textarea name="comments" cols="20" rows="4">Enter your comments...</textarea>
+    </form>
+</body>
+</html>

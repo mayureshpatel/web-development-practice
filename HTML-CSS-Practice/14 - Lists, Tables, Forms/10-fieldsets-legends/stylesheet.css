@@ -1,0 +1,77 @@
+fieldset {
+    /* box styles */
+    padding: 20px;
+    width: 300px;
+
+    /* border styles */
+    border: 2px solid #cccccc;
+    border-radius: 10px;
+
+    /* text styles */
+    text-align: right;
+}
+
+legend {
+    padding: 10px 20px;
+    background-color: #efefef;
+
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+
+    text-align: left;
+    text-transform: uppercase;
+}
+
+label {
+    font-size: 110%;
+
+}
+
+input {
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+input[type="text"] {
+    width: 235px;
+    height: 25px;
+    
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid #cccccc;
+
+    font-size: 110%;
+}
+
+input[type="text"]:hover {
+    border-bottom: 2px solid #aed6b1;
+}
+
+input[type="text"]:focus {
+    background-color:#fafafa;
+    
+    outline: none;
+    border-bottom: 3px solid #aed6b1;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+input[type="submit"] {
+    width: 80px;
+    background-color: #665544;
+
+    border: none;
+    border-radius: 8px;
+
+    color: #efefef;
+}
+
+input[type="submit"]:hover {
+    background-color: #665c45;
+}
+
+input[type="submit"]:focus {
+    outline: none;
+    border: 2px solid black;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fading elements using JQuery</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!--
+        With JQuery, you can fade an element in and out of visibility
+        using the following methods:
+
+            $("selector").fadeIn(speed, callback);
+            $("selector").fadeOut(speed, callback);
+
+        The speed and callback parameters are optional.
+
+            speed: "slow", "fast", or milliseconds(integer)
+            callback: a function to be executed after the hide/show method
+    -->
+    <script>
+        $(document).ready(function() {
+            $("#fade-toggle").click(function() {
+                $(".magic-div").fadeToggle(500);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Fading Elements using JQuery</h1>
+
+    <p id="fade-toggle">
+        There is a panel below that can be toggled to fade in/out by clicking on this &lt;p&gt;
+    </p>
+
+    <div class="magic-div" style="border: 2px solid black;">
+        <p>
+            Pikachu ipsum dolor sit amet magna magna hitmonchan weezing irure laboris alakazam
+            consequat. Sandshrew officia duis ex fearow abra. Machoke ut sunt, squirtle marowak
+            irure poliwrath exeggutor charizard omanyte pikachu labore exeggcute sint dolore.
+            Dolor sint aute velit cillum dragonite laboris pinsir non.
+        </p>
+    </div>
+</body>
+</html>

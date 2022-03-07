@@ -1,0 +1,23 @@
+/*
+    If you specify the font-family or color properties on
+    the <body> element, they will apply to most child elements.
+    This is because the value of the font-family property is
+    inherited by child elements.
+
+    The background-color or border properties are not inherited
+    by child elements.
+
+    You can force a lot of properties to inherit values from their
+    parent elements by using inherit for the value of the properties.
+*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(59, 59, 59);
+    padding: 10px;
+}
+
+.page {
+    border: 1px solid rgb(0, 255, 255);
+    background-color: rgb(175, 175, 251);
+    padding: inherit;
+}

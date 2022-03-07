@@ -1,0 +1,29 @@
+/*
+    Leading is a term typographers use for the vertical space between lines of text. In a
+    typeface, the part of  a letter that drops beneath the baseline is called a descender,
+    while the highest point of a letter is called the ascender. Leading is measured from the
+    bottom of the descender on one line to the top of the ascender on the next.
+
+    In CSS, the line-height property sets the height of an entire line of text, so the difference
+    between the font-size and the line-height is equivalent to the leading. Increasing the line-height
+    makes the vertical gap between lines of text larger.
+*/
+body {
+    font-family: Georgia, Times, serif;
+    font-size: 16px;
+}
+
+h2 {
+    /* If a font name is more than one word, it should be enclosed in double quotes */
+    font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+dl {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+dd {
+    line-height: 1.7em;
+}

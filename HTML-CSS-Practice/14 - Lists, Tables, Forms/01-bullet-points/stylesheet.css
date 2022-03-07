@@ -1,0 +1,24 @@
+ol {
+    /*
+        The list-style-type property allows you to control the shape or
+        style of a bullet point (also known as a marker).
+
+        It can be used on rules that apply to the <ol>, <ul>, and <li>
+        elements.
+
+        Uses:
+
+            Unordered Lists:
+                none
+                disc
+                circle
+                square
+
+            Ordered Lists:
+                decimal
+                decimal-leading-zero
+                lower-alpha/upper-alpha
+                lower-roman/upper-roman
+    */
+    list-style-type: lower-roman;
+}

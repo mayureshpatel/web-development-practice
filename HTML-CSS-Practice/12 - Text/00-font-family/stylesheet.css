@@ -1,0 +1,29 @@
+/*
+    The font-family property allows you to specify the typeface that should be used
+    for any text inside the element(s) to which a CSS rule applies.
+
+    The value of this property is the name of the typeface you want to use.
+
+    Because not all users' computers will have the same typefaces that are installed
+    on your computer, you should tell the browser to fallback onto another typeface.
+    
+    You can specify a list of fonts separated by commas so that, if the user does
+    not have your first choice of typeface installed, the browser can try to use an
+    alternative font from the list.
+
+    It is common to end the list with a generic font name for that type of font.
+
+    It is suggested that pages should not have more than 3 typefaces.
+*/
+body {
+    font-family: Georgia, Times, serif;
+}
+
+h2 {
+    /* If a font name is more than one word, it should be enclosed in double quotes */
+    font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+dl {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}

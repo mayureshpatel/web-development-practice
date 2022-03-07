@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, Verdana, sans-serif;
+    color: #111111;
+}
+
+table {
+    /*
+        Setting the width of the table
+    */
+    width: 600px;
+}
+
+th, td {
+    /*
+        th and td make up all cells in a table, so here we are adding
+        padding to every cell in the table (the space between the border
+        or each table cell and its content)
+    */
+    padding: 7px 10px 10px 10px;
+}
+
+th {
+    /* Converts the content of table headers to uppercase */
+    text-transform: uppercase;
+
+    /* Sets the table header letter spacing and font size */
+    letter-spacing: 0.1em;
+    font-size: 90%;
+
+    /* Adds a 2px border to the bottom of table header boxes */
+    border-bottom: 2px solid #111111;
+
+    /* Adds a 1px border to the top of the table header boxes */
+    border-top: 1px solid #999999;
+
+    /* Aligns the text of the table headers to the left */
+    text-align: left;
+}
+
+tr.even {
+    /* Sets the background color of all table rows that have the 'even' class */
+    background-color: #efefef;
+}
+
+tr:hover {
+    /* Sets the background color of table rows when the user hovers over the row */
+    background-color: #c3e6e5;
+}
+
+.money {
+    /* Aligns the text in cells whose class is 'money' */
+    text-align: right;
+}

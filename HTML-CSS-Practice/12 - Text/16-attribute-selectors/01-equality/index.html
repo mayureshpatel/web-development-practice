@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equality Selector</title>
+
+    <!--
+        Using the equality selector, you can select elements that have a specific attribute with a certain value.
+
+        For example,
+
+            p[class="small-text"] will select <p> elements with the class attribute whose value is "small-text"
+            a[id="myLink"] will select <a> elements with the id attribute whose value is "myLink"
+    -->
+    <style>
+        .box {
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            padding: 5px;
+            
+            text-align: center;
+            box-shadow: 1px 1px 6px black;
+        }
+
+        /* styling all h2 elements */
+        h2 {
+            color: darkcyan;
+            text-decoration: underline;
+        }
+
+        /* style p elements that have an id attribute value of "h2-text" */
+        p[class="h2-text"] {
+            font-size: 24px;
+
+            text-decoration: underline;
+            color: darkcyan;
+        }
+
+        /* style p elements that have a class attribute value of "p-text" */
+        p[class="p-text"] {
+
+            color: darkslategrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Equality Selector</h1>
+
+    <div class="box">
+        <h2 id="sub-one">Subheading 1</h2>
+        <p class="h2-text">Selecting p with &lbrack;class&equals;&ldquo;h2&dash;text&rdquo;&rbrack; attribute</p>
+    </div>
+
+    <div class="box">
+        <h2 class="h2-text">Subheading 2</h2>
+        <p class="p-text">Selecting p with &lbrack;class&equals;&ldquo;p&dash;text&rdquo;&rbrack; attribute</p>
+    </div>
+
+    <div class="box">
+        <h2 class="h2-text">Subheading 3</h2>
+        <p class="p-text">Selecting p with &lbrack;class&equals;&ldquo;p&dash;text&rdquo;&rbrack; attribute</p>
+    </div>
+</body>
+</html>

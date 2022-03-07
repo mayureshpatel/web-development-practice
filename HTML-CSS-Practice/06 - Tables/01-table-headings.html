@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Headings</title>
+</head>
+<body>
+    <h1>Table Headings</h1>
+
+    <!--
+        The <th> element is used just like the <td> element but its purpose is to represent the heading for either a column or a row.
+            <th> = table heading
+                Using <th> elements for heading helps people who use screen readers, improves the ability for search engines to
+                index your pages, and also enables you to control the appearance of tables better.
+
+        Even if a cell has no content, you should still use a <td> or <th> element to represent the presence of an empty cell otherwise
+        the table will not render correctly.
+
+        Note: Browsers usually display the content of a <th> element in bold and in the middle of the cell.
+    -->
+    <table>
+        <tr>
+            <th></th>
+            <th scope="col">Saturday</th>
+            <th scope="col">Sunday</th>
+        </tr>
+        <tr>
+            <th scope="row">Tickets Sold:</th>
+            <td>120</td>
+            <td>135</td>
+        </tr>
+        <tr>
+            <th scope="row">Total Sales:</th>
+            <td>$600</td>
+            <td>$675</td>
+        </tr>
+    </table>
+</body>
+</html>

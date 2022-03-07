@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacity</title>
+
+    <!--
+        The opacity property allows you to specify the oapcity of an element
+        and any of its child elements. The value is a number between 0.0 and
+        1.0.
+
+        Using just the opacity property by itself will apply opacity to the
+        text of the element. So adding opacity to a <div> element will change
+        opacity of the text rather than the background of the element.
+
+        The rgba and hsla properties to control the colors have the "a" at the
+        end to control the opacity. This is known as the alpah value and is a
+        number between 0.0 and 1.0. The rgba/hsla values applied will only
+        affect the element that they are applied to, not the child elements.
+    -->
+    <style>
+        .box {
+            /* Size of the box */
+            width: 200px;
+            height: 200px;
+
+            /* Text color */
+            color: whitesmoke;
+
+            /* Display block elements inline */
+            display: inline-block;
+        }
+
+        .box1 {
+            /* Background color with 100% opacity */
+            background-color: rgba(0, 0, 0, 1);
+        }
+
+        .box2 {
+            /* Background color with 100% opacity */
+            background-color: rgba(0, 0, 0, .90);
+        }
+
+        .box3 {
+            /* Background color with 100% opacity */
+            background-color: rgba(0, 0, 0, .80);
+        }
+
+        .box4 {
+            /* Background color with 100% opacity */
+            background-color: rgba(0, 0, 0, .70);
+        }
+
+        .box5 {
+            /* Background color with 100% opacity */
+            background-color: rgba(0, 0, 0, .60);
+        }
+
+        .box6 {
+            /* Background color with 100% opacity */
+            background-color: rgba(0, 0, 0, .50);
+        }
+    </style>
+</head>
+<body>
+    <h1>Opacity</h1>
+
+    <div>
+        <div class="box box1">Black Box with 1 Opacity</div>
+        <div class="box box2">Black Box with &period;90 Opacity</div>
+        <div class="box box3">Black Box with &period;80 Opacity</div>
+        <div class="box box4">Black Box with &period;70 Opacity</div>
+        <div class="box box5">Black Box with &period;60 Opacity</div>
+        <div class="box box6">Black Box with &period;50 Opacity</div>
+    </div>
+</body>
+</html>
